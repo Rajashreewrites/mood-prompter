@@ -25,7 +25,7 @@ Generate a new prompt each time, no repetition of same prompt allowed."""
 
     try:
         response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-120b",
             max_tokens=300,
             messages=[
                 {"role": "system", "content": system_prompt},
